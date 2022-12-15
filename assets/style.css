@@ -1,0 +1,172 @@
+:root {
+  --brancoPrincipal: #ffffff;
+  --cinzaSecundario: #c0c0c0;
+  --bgColor: #00030c;
+  --botaoAzul: #167bf7;
+  --fontePrincipal: "Inter";
+  --activeColor: #7ea9de;
+}
+
+body {
+  color: var(--brancoPrincipal);
+  background-color: var(--bgColor);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.primeiro {
+  background-image: url("/assets/img/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.divPrincipal {
+  margin: 0 6em;
+}
+
+.botaoAssinaturaCombo {
+  background-color: var(--botaoAzul);
+  padding: 16px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.botaoAssinaturaPlus {
+  padding: 16px;
+  border: 2px solid var(--brancoPrincipal);
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.botaoSecundario {
+  display: inline-block;
+}
+
+.primeiroTitulo {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.containerAviso {
+  font-size: 12px;
+  color: var(--cinzaSecundario);
+}
+
+.principalImagem {
+  margin: 1em 0 2em 0;
+}
+
+.secundarioImagem {
+  width: 80%;
+}
+
+.segundo {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricaoTitulo {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 0.1em;
+}
+
+.descricaoTexto {
+  color: var(--cinzaSecundario);
+}
+
+.descricaoTerceiro {
+  margin: 0 6em;
+}
+
+.botaoSecundario {
+  margin-top: 1em;
+}
+
+.quarto {
+  margin: 0 10em;
+}
+
+.dispositivosLista {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+}
+
+.dispositivos {
+  text-align: center;
+}
+
+.dispositivosTitulo {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.listaItem {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.rodape {
+  text-align: center;
+  margin: 145px 120px 100px 120px;
+}
+
+.rodapeLista {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+.rodape p {
+  color: var(--cinzaSecundario);
+  font-size: 14px;
+}
+
+.rodape p:nth-child(2n) {
+  margin-top: 2em;
+}
+
+.itemRodapeLista a:hover {
+  color: var(--botaoAzul);
+}
+
+.itemRodapeLista a:active {
+  color: var(--activeColor);
+}
+
+.botaoAssinaturaCombo:hover {
+  animation-name: animacaoBotao;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 30px 0 rgba(0, 229, 255, 0.5);
+}
+
+@keyframes animacaoBotao {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
